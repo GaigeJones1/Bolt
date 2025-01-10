@@ -4,8 +4,8 @@
 //Hardware: Bolt #SB-2FAE
 
 async function startProgram() {
-	await speak("Hello World", true);
-	setMainLed({ r: 0, g: 0, b: 255});
+	await speak("I am the Tech Giant", true);
+	setMainLed({ r: 0, g: 150, b: 105});
 	setSpeed(60);
 	await delay (2);
 	setSpeed(0);
