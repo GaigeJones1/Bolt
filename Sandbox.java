@@ -9,9 +9,9 @@ async function startProgram() {
     setSpeed(60);
     await delay (3);
     setSpeed(0);
-    await roll((getHeading() + 90), 60, 1);
+    await roll((getHeading() + 180), 60, 1);
     setSpeed(60);
     await delay (3);
     setSpeed(0);
-    setMainLed({ r: 0, g: 0, b: 255});
+    setMainLed({ r: 0, g: 60, b: 195});
 }
