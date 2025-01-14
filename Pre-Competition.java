@@ -8,6 +8,15 @@
 //Driver: Gaige Jones
 //Navigator: Gage Hensley
 
+async function startProgram(){
+    await speak("start", true);
+    
+        await delay(1);
+	await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true) 
+}
+
+
+
 //red
 //bolt led will turn red
 //driver: Gage Hensley
