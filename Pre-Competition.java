@@ -3,7 +3,7 @@
 //Program: Pre-Competition
 //Hardware: Bolt #SB-2FAE
 
-//Start
+//Start & Say Start
 //Bolt will say Start Acrossed the LED's
 //Driver: Gaige Jones
 //Navigator: Gage Hensley
