@@ -6,15 +6,15 @@
 //Start Program
 async function startProgram(){
 
-    //Start & Say Start
-    //Bolt will say Start Acrossed the LED's
-    //Driver: Gaige Jones
-    //Navigator: Gage Hensley
+//Start & Say Start
+//Bolt will say Start Acrossed the LED's
+//Driver: Gaige Jones
+//Navigator: Gage Hensley
+
+    await speak("start", true);
     
-        await speak("start", true);
-    
-            await delay(1);
-        await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true);
+    await delay(1);
+    await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true);
     
     
 //red
@@ -22,8 +22,8 @@ async function startProgram(){
 //driver: Gage Hensley
 //Navigator: Gaige Jones
     
-        await delay(1);
-        setMainLed({ r: 255, g: 0, b: 0 });
+    await delay(1);
+    setMainLed({ r: 255, g: 0, b: 0 });
     
 //Forward & Turn 90 degrees and forward
 //driver: Gaige Jones
