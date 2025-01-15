@@ -17,19 +17,17 @@ async function startProgram(){
         await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true);
     
     
-    
-    
-    //red
-    //bolt led will turn red
-    //driver: Gage Hensley
-    //Navigator: Gaige Jones
+//red
+//bolt led will turn red
+//driver: Gage Hensley
+//Navigator: Gaige Jones
     
         await delay(1);
         setMainLed({ r: 255, g: 0, b: 0 });
     
-    //Forward & Turn 90 degrees and forward
-    //driver: Gaige Jones
-    //Navigator: Gage Hensley
+//Forward & Turn 90 degrees and forward
+//driver: Gaige Jones
+//Navigator: Gage Hensley
 
     await delay(1);
     setSpeed(60);
@@ -40,9 +38,9 @@ async function startProgram(){
     await delay(1);
     setSpeed(0);
 
-    //play sound
-    //driver: Gage Hensley
-    //Navigator: Gaige Jones
+//play sound
+//driver: Gage Hensley
+//Navigator: Gaige Jones
      
-    //End Program
-    }
+//End Program
+}
