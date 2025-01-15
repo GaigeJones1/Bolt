@@ -30,7 +30,16 @@ async function startProgram(){
     //Forward & Turn 90 degrees and forward
     //driver: Gaige Jones
     //Navigator: Gage Hensley
-    
+
+    await delay(1);
+    setSpeed(60);
+    await delay(2)
+    setSpeed(0);
+    await roll((getHeading() + 90), 60, 1);
+    setSpeed(30);
+    await delay(1);
+    setSpeed(0);
+
     //play sound
     //driver: Gage Hensley
     //Navigator: Gaige Jones
