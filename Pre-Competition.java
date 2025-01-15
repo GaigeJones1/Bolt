@@ -3,36 +3,37 @@
 //Program: Pre-Competition
 //Hardware: Bolt #SB-2FAE
 
-//start program
+//Start Program
 async function startProgram(){
 
-//Start & Say Start
-//Bolt will say Start Acrossed the LED's
-//Driver: Gaige Jones
-//Navigator: Gage Hensley
-
-
-    await speak("start", true);
+    //Start & Say Start
+    //Bolt will say Start Acrossed the LED's
+    //Driver: Gaige Jones
+    //Navigator: Gage Hensley
+    
+        await speak("start", true);
+    
+            await delay(1);
+        await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true);
+    
+    
+    
+    
+    //red
+    //bolt led will turn red
+    //driver: Gage Hensley
+    //Navigator: Gaige Jones
     
         await delay(1);
-	await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true) 
-
-
-
-
-//red
-//bolt led will turn red
-//driver: Gage Hensley
-//Navigator: Gaige Jones
-
-//Forward & Turn 90 degrees and forward
-//driver: Gaige Jones
-//Navigator: Gage Hensley
-
-//play sound
-//driver: Gage Hensley
-//Navigator: Gaige Jones
-
-
-//end program
-}
+        setMainLed({ r: 255, g: 0, b: 0 });
+    
+    //Forward & Turn 90 degrees and forward
+    //driver: Gaige Jones
+    //Navigator: Gage Hensley
+    
+    //play sound
+    //driver: Gage Hensley
+    //Navigator: Gaige Jones
+     
+    //End Program
+    }
