@@ -3,17 +3,20 @@
 //Program: Pre-Competition
 //Hardware: Bolt #SB-2FAE
 
+//start program
+async function startProgram(){
+
 //Start & Say Start
 //Bolt will say Start Acrossed the LED's
 //Driver: Gaige Jones
 //Navigator: Gage Hensley
 
-async function startProgram(){
+
     await speak("start", true);
     
         await delay(1);
 	await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true) 
-}
+
 
 
 
@@ -29,3 +32,7 @@ async function startProgram(){
 //play sound
 //driver: Gage Hensley
 //Navigator: Gaige Jones
+
+
+//end program
+}
