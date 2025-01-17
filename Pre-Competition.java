@@ -104,5 +104,51 @@ async function startProgram(){
 //driver: Gaige Jones
 //Navigator: Gage Hensley
 
+setMainLed({ r: 0, g: 133, b: 202 });
+await turn(30);
+await rollDistance(30, 35, 12);
+await comeToStop();
+await turn(181);
+await rollDistance(181, 35, 6);
+await comeToStop();
+await turn(354);
+await rollDistance(354, 35, 7);
+await comeToStop();
+await turn(82);
+await rollDistance(82, 35, 4);
+await rollDistance(120, 35, 6);
+await comeToStop();
+await turn(240);
+await rollDistance(240, 113, 10);
+await rollDistance(242, 35, 6);
+await comeToStop();
+exitProgram();
+}
+
+var MIN_SPEED = 5.0;
+var minSpeedSq = MIN_SPEED ** 2;
+
+async function comeToStop() {
+stopRoll();
+
+while ((getVelocity().x ** 2) + (getVelocity().y ** 2) > minSpeedSq) {
+    await delay(0.025);
+}
+}
+
+async function turn(heading) {
+setHeading(heading);
+await delay(0.5);
+}
+
+async function rollDistance(heading, speed, distance) {
+await roll(heading, speed);
+
+var distanceSq = distance ** 2;
+var startLocation = getLocation();
+
+while (((getLocation().x - startLocation.x) ** 2) + ((getLocation().y - startLocation.y) ** 2) < distanceSq) {
+    await delay(0.025);
+}
 //End Program
 }
