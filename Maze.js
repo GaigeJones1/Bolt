@@ -6,53 +6,58 @@
 //Start Program
 async function startProgram(){
 
-//Start & Say Start
-//Bolt will say Start Acrossed the LED's & say it outloud
-//Driver: Gaige Jones
-//Navigator: Gage Hensley
+    //Start & Say Start
+    //Bolt will say Start Acrossed the LED's & say it outloud
+    //Driver: Gaige Jones
+    //Navigator: Gage Hensley
     await speak("start", true);
     await delay(1);
     await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true);
 
-//Green Checkpoint
-//LED's turn Green
-//Driver: Gage Hensley
-//Navigator: Gaige Jones
-
-//Sound #1 Checkpoint
-//Bolt makes sound of choice
-//Driver: Gaige Jones
-//Navigator: Gage Hensley
-
-//Red Checkpoint
-//LED's turn Red
-//Driver: Gage Hensley
-//Navigator: Gaige Jones
-
-//Sound #2 Checkpoint
-//Bolt makes sound of choice - update sound
-//Driver: Gaige Jones
-//Navigator: Gage Hensley
-
-//Purple Checkpoint
-//LED's turn purple
-//Driver: Gage Hensley
-//Navigator: Gaige Jones
-
-//Sound #3 Checkpoint
-//Bolt makes sound of choice - update sound
-//Driver: Gaige Jones
-//Navigator: Gage Hensley
-
-//Blue Checkpoint
-//LED's turn blue
-//Driver: Gage Hensley
-//Navigator: Gaige Jones
-
-//Finish & Say finish
-//Bolt will say finished Acrossed the LED's & say it outloud
-//Driver: Gaige Jones
-//Navigator: Gage Hensley
-
-//End Program
-}
+    //Green Checkpoint
+    //LED's turn Green
+    //Driver: Gage Hensley
+    //Navigator: Gaige Jones
+    await delay(1);
+    setSpeed(35);
+    await delay(5);
+    setSpeed(0);
+    setMainLed({ r: 0, g: 255, b: 0 });
+    
+    //Sound #1 Checkpoint
+    //Bolt makes sound of choice
+    //Driver: Gaige Jones
+    //Navigator: Gage Hensley
+    
+    //Red Checkpoint
+    //LED's turn Red
+    //Driver: Gage Hensley
+    //Navigator: Gaige Jones
+    
+    //Sound #2 Checkpoint
+    //Bolt makes sound of choice - update sound
+    //Driver: Gaige Jones
+    //Navigator: Gage Hensley
+    
+    //Purple Checkpoint
+    //LED's turn purple
+    //Driver: Gage Hensley
+    //Navigator: Gaige Jones
+    
+    //Sound #3 Checkpoint
+    //Bolt makes sound of choice - update sound
+    //Driver: Gaige Jones
+    //Navigator: Gage Hensley
+    
+    //Blue Checkpoint
+    //LED's turn blue
+    //Driver: Gage Hensley
+    //Navigator: Gaige Jones
+    
+    //Finish & Say finish
+    //Bolt will say finished Acrossed the LED's & say it outloud
+    //Driver: Gaige Jones
+    //Navigator: Gage Hensley
+    
+    //End Program
+    }
