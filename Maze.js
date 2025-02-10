@@ -21,7 +21,7 @@ async function startProgram(){
     //Navigator: Gaige Jones
         await delay(1);
         setSpeed(35);
-        await delay(5);
+        await delay(5.2);
         setSpeed(0);
         setMainLed({ r: 0, g: 255, b: 0 });
 
@@ -47,7 +47,7 @@ async function startProgram(){
     //Driver: Gage Hensley
     //Navigator: Gaige Jones
         await delay(1);
-        await roll((getHeading() + 37), 35, 1);
+        await roll((getHeading() + 38), 35, 1);
         setSpeed(35);
         await delay(1.4);
         setSpeed(0);
@@ -60,7 +60,7 @@ async function startProgram(){
       	await roll((getHeading() - 90), 35, 1);
       	await delay(1);
       	setSpeed(35);
-      	await delay(.3);
+      	await delay(.4);
       	setSpeed(0);
       	await delay(1);
       	await roll((getHeading() - 87), 35, 1);
@@ -85,7 +85,7 @@ async function startProgram(){
       	await roll((getHeading() + 45), 35, 1);
       	await delay(1);
       	setSpeed(35);
-      	await delay(0.12);
+      	await delay(0.2);
       	setSpeed(0);
 	  	  setMainLed({ r: 255, g: 0, b: 255 });
 
@@ -96,12 +96,12 @@ async function startProgram(){
 	await delay(1);
 	await roll((getHeading() - 90), 35, 1);
 	setSpeed(35);
-	await delay(1);
+	await delay(1.2);
 	setSpeed(0);
 	await roll((getHeading() - 90), 35, 1);
 	await delay(1);
 	setSpeed(35);
-	await delay(.6)
+	await delay(.5)
 	setSpeed(0);
 	await Sound.Animal.Horse.play(true); 
     //Blue Checkpoint
